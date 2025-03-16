@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+    background-color: beige;
+}
+
+h1{
+    background-color: #081b31;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+    
+}
+
+.choice{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice:hover{
+    cursor: pointer;
+    background-color: #081b31;
+    opacity: 0.5;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.choises{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.score-bord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user-score, #comp-score{
+    font-size: 4rem;
+}
+#msg{
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.msg-container{
+    margin-top: 5rem;
+}
+#tap{
+    padding-top: 10px;
+    font-size: 12px;
+}
+.tap-img{
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    #msg{
+        font-size: 1.1rem;
+    }
+    h1{
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 2rem;
+    }
+    .choises{
+        gap: 1.5rem;
+    }
+    img{
+        height: 80px;
+        width: 80px;
+    }
+    .score-bord{
+        gap: 3rem;
+    }
+}
